@@ -26,9 +26,7 @@ export default function BookInfo({ books, addToCart, cart }) {
             <div className="book__selected--top">
               <Link to="/books" className="book__link">
                 <FontAwesomeIcon icon="arrow-left" />
-              </Link>
-              <Link to="/books" className="book__link">
-                <h2 className="book__selected--title--top">Books</h2>
+                <h4 className="books-link__title">Books</h4>
               </Link>
             </div>
             <div className="book__selected">

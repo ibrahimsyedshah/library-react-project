@@ -57,14 +57,14 @@ li {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
   color: #7342d6;
   margin-bottom: 24px;
   text-align: center;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 32px;
   text-align: center;
 }
@@ -239,19 +239,26 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .header__description {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 12px;
 }
 
 .header__img--wrapper {
   padding: 20px;
+
+  /* Added this after the tutorial to 
+  show it over the wave on larger screens */
   z-index: 50;
-  max-height: 50vh;
+  
+  /* Added this after the tutorial to 
+  make landing page responsive on laptops */
+  max-height: 45vh;
 }
 
 .container {
@@ -611,6 +618,13 @@ select {
   margin-bottom: 0;
 }
 
+.books-link__title {
+  display: inline;
+  padding-left: 8px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
 .book__summary {
   margin-bottom: 16px;
 }
@@ -774,19 +788,60 @@ select {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 34px;
   }
 
-  h2 {
-    font-size: 26px;
+  .menu__list {
+    padding: 16px 0;
   }
 
-  button {
+  h2, .menu__link, .btn__menu--close {
     font-size: 18px;
+  }
+
+  button, .btn {
+    font-size: 12px;
+  }
+
+  .nav__link {
+    font-size: 18px;
+  }
+
+  .logo, .footer__logo--img {
+    width: 120px;
   }
 
   .book {
     width: 50%;
+  }
+
+  .book__title--link {
+    font-size: 16px;
+  }
+
+  .book__price, .book__price--normal {
+    font-size: 14px;
+  }
+
+  .highlight__subtitle {
+    font-size: 16px;
+  }
+
+  .highlight__para {
+    font-size: 14px;
+  }
+
+  .book__img {
+    max-height: 256px;
+    max-width: 200px;
+  }
+
+  .footer__link, .footer__copyright {
+    font-size: 14px;
+  }
+
+  .book__selected--figure {
+    max-width: 60%;
   }
 
   .book__selected {
@@ -798,6 +853,18 @@ select {
   }
   .book__selected--description {
     width: 100%;
+  }
+
+  .cart__book, .cart__quantity, .cart__total {
+    font-size: 16px;
+  }
+
+  .cart__book--title, .total__item {
+    font-size: 16px;
+  }
+
+  .cart__book--price {
+    font-size: 14px;
   }
 }
 

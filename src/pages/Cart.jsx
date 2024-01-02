@@ -21,7 +21,7 @@ export default function ({ cart, changeQuantity, removeItem }) {
               <div className="cart">
                 <div className="cart__header">
                   <span className="cart__book">Book</span>
-                  <span className="cart__quantity">Quantity</span>
+                  <span className="cart__quantity">Qty</span>
                   <span className="cart__total">Price</span>
                 </div>
                 <div className="cart__body">
@@ -102,7 +102,7 @@ export default function ({ cart, changeQuantity, removeItem }) {
                   <button
                     className="btn no-cursor btn__checkout"
                     onClick={() =>
-                      alert(`Haven't got around to doing this :()`)
+                      alert(`This feature has not yet been implemented`)
                     }
                   >
                     Proceed to checkout

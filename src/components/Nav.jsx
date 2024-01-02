@@ -40,13 +40,13 @@ export default function Nav({numberOfItems}) {
                     <FontAwesomeIcon icon="times" />
                 </button>
                 <ul className="menu__links">
-                    <li className="menu__list">
+                    <li className="menu__list" onClick={closeMenu}>
                         <Link to="/" className='menu__link'>Home</Link>
                     </li>
-                    <li className="menu__list">
+                    <li className="menu__list" onClick={closeMenu}>
                         <Link to="/books" className='menu__link'>Books</Link>
                     </li>
-                    <li className="menu__list">
+                    <li className="menu__list" onClick={closeMenu}>
                         <Link to="/cart" className='menu__link'>Cart</Link>
                     </li>
                 </ul>
